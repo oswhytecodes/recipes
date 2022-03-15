@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+
+  width: 100vw;
+  max-height: fit-content;
+}
+.hero-img img {
+  position: absolute;
+  width: 100vw;
+  object-fit: scale-down;
+}
+
+.hero-img img:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: rgb(93, 93, 182);
+  background-image: linear-gradient(
+    27deg,
+    rgba(93, 93, 182, 1) 34%,
+    rgba(2, 25, 29, 1) 100%
+  );
+}
+
+.hero-text {
+  position: absolute;
+  max-width: 50%;
+  padding: 4em 5em;
+  letter-spacing: 1.4px;
+  z-index: 2;
+}
+.hero-text h1 {
+  font-size: 2.5em;
+}
+.hero-text p {
+  margin-top: 1em;
+}

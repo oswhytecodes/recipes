@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Hero from "./Hero"
+import Section from "./Section";
+import Card from "./Card";
 import "./App.css";
 
 // Component
@@ -9,6 +11,7 @@ const App = () => {
     <div>
       <Header />
       <Hero />
+      <Section />
     </div>
   );
 };

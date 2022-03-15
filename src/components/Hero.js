@@ -4,12 +4,9 @@ import heroImg from "../assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <div className="container">
+    <section className="container">
       {/* Hero Img */}
       <div className="hero-section">
-        <div className="hero-img">
-          <img src={heroImg} alt="" />
-        </div>
         {/* Hero Text */}
         <div className="hero-text">
           <h1> Perfectly Light </h1> <h1> In Every Bite </h1>
@@ -20,7 +17,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

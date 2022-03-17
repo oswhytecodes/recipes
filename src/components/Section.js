@@ -3,6 +3,8 @@ import Card from "./Card";
 import "./Section.css";
 import recipeOne from "../assets/images/recipe1.jpg";
 import recipeTwo from "../assets/images/recipe2.jpg";
+import foodBg from "../assets/images/food.jpg";
+import Photocard from "./Photocard";
 
 const Section = () => {
   return (
@@ -58,8 +60,10 @@ const Section = () => {
           </div>
         </div>
       </section>
-
-      <section className="section-container section-one">
+      <div>
+        <img className="food-bg" src={foodBg} alt="" />
+      </div>
+      <section className="section-container section-one about-us">
         <div className="subhead subhead-center">
           <h4>About Us</h4>
           <h3>Eat Healthy, Be Nutrition Wealthy</h3>
@@ -88,7 +92,10 @@ const Section = () => {
         </div>
 
         <div className="photo-card-container">
-
+          <Photocard />
+          <Photocard />
+          <Photocard />
+          <Photocard />
         </div>
       </section>
     </div>

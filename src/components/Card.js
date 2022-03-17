@@ -1,23 +1,23 @@
 import react from "react";
 import "./Card.css";
-import Fruit from '../assets/images/fruits.png'
+import Fruit from "../assets/images/fruits.png";
 
-const Card = () => {
+const Card = ({ id, headerOne, headerTwo, text, link }) => {
   return (
     <div className="card-container">
       <div className="card-header ">
         <img src={Fruit} alt="" />
-        <p>01</p>
+        <p>{id}</p>
       </div>
-      <p className="one">Weight Loss</p>
-      <p className="two">Diet Plan</p>
+      <p className="one">{headerOne}</p>
+      <p className="two">{headerTwo}</p>
       <p className="card-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        {text}Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       <hr />
       <div>
         <a className="card-link" href="#">
-          {" "}
+          {link}
           Read More
         </a>
         <img src="" alt="" />

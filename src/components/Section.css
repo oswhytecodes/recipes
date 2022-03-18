@@ -36,7 +36,7 @@ a {
 }
 /* === SECTION TWO RECIPES === */
 .section-one {
-  /* max-width: 50em; */
+  max-width: 50em;
 }
 .section-two {
   background-color: #f5f5f5;

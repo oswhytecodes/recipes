@@ -1,14 +1,16 @@
 import react from "react";
 import Card from "./Card";
+import Photocard from "./Photocard";
 import "./Section.css";
 import recipeOne from "../assets/images/recipe1.jpg";
 import recipeTwo from "../assets/images/recipe2.jpg";
 import foodBg from "../assets/images/food.jpg";
-import Photocard from "./Photocard";
+
 
 const Section = () => {
   return (
     <div>
+      {/*  */}
       <section className="section-container section-one">
         <div className=" subhead subhead-center">
           <h4>OUR SERVICES</h4>
@@ -40,8 +42,8 @@ const Section = () => {
           <h3>The New Tradition Is Good Nutrition</h3>
         </div>
         <div className="images">
-          <img className="about-images" src={recipeOne} alt="" />
-          <img className="about-images" src={recipeTwo} alt="" />
+          <img className="about-images" src={recipeOne} alt="Recipe book" />
+          <img className="about-images" src={recipeTwo} alt="Recipe book " />
           <div className="tabs-container">
             <ul className="tabs-list">
               <li>Our History</li>
@@ -61,7 +63,7 @@ const Section = () => {
         </div>
       </section>
       <div>
-        <img className="food-bg" src={foodBg} alt="" />
+        <img className="food-bg" src={foodBg} alt="Vegetables on a table" />
       </div>
       <section className="section-container section-one about-us">
         <div className="subhead subhead-center">

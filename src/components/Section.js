@@ -5,7 +5,10 @@ import "./Section.css";
 import recipeOne from "../assets/images/recipe1.jpg";
 import recipeTwo from "../assets/images/recipe2.jpg";
 import foodBg from "../assets/images/food.jpg";
-
+import foodOne from "../assets/images/Food1.jpg";
+import foodTwo from "../assets/images/food2.jpg";
+import foodThree from "../assets/images/food3.jpg";
+import foodFour from "../assets/images/food4.jpg";
 
 const Section = () => {
   return (
@@ -36,7 +39,7 @@ const Section = () => {
         </div>
       </section>
 
-      <section className="section-container section-two">
+      <section className="section-container section-two recipes">
         <div className="subhead subhead-left">
           <h4>Recipes</h4>
           <h3>The New Tradition Is Good Nutrition</h3>
@@ -87,17 +90,33 @@ const Section = () => {
         </p>
       </section>
 
-      <section className="section-container section-one">
+      <section className="section-container section-one recipe-book">
         <div className="subhead subhead-center">
           <h4>Recipe Book</h4>
           <h3>Our Healthy Popular Items</h3>
         </div>
 
         <div className="photo-card-container">
-          <Photocard />
-          <Photocard />
-          <Photocard />
-          <Photocard />
+          <Photocard
+            recipeImg={foodOne}
+            text="Wealth and WellBeing"
+            price="$45"
+          />
+          <Photocard
+            recipeImg={foodTwo}
+            text="Wealth and WellBeing"
+            price="$45"
+          />
+          <Photocard
+            recipeImg={foodThree}
+            text="The Nutrition Lookbook"
+            price="Add to cart"
+          />
+          <Photocard
+            recipeImg={foodFour}
+            text="The Power of Fruits"
+            price="$45"
+          />
         </div>
       </section>
     </div>

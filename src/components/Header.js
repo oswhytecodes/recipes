@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Header.css';
+import Menu from '../assets/images/menu.png'
 
 const Header = () => {
     return (
@@ -14,6 +15,7 @@ const Header = () => {
        <li><a href="#">Shop</a></li>
        <li><a href="#">Search</a> </li>
      </ul>
+     <img className="menu-burger" src={Menu} alt="" />
      </nav>
   ); 
   };

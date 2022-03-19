@@ -65,7 +65,7 @@ a {
   align-items: flex-start;
   flex-wrap: wrap;
   /* max-width: 50em; */
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .images > * + * {
   margin-left: 2em;
@@ -76,7 +76,7 @@ a {
 
 /* Tabs Container  */
 .tabs-container {
-  
+  width: 40%;
 }
 .tabs-list {
   list-style: none;
@@ -87,7 +87,7 @@ a {
 }
 .tabs-list li {
   padding: 1em 0.6em;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .tabs-list > * + * {
   margin-left: 1em;
@@ -103,17 +103,19 @@ a {
     margin-top: 2em;
   }
   .images > * + * {
+    margin-left: 0em;
+  }
+  .images:nth-child(1) {
     margin-left: 1em;
   }
   .subhead-left {
     text-align: left;
     padding: 0.5em;
   }
-.tabs-container {
-
+  .tabs-container {
+    width: 19em;
+  }
 }
-}
-
 
 /* === SECTION THREE ABOUT US -  CONTACT === */
 .food-bg {

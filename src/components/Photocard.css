@@ -1,10 +1,9 @@
 .photocard-container img {
-  width: 8em;
-  object-fit:cover;
+  width: 10em;
+  object-fit:center;
 }
 .photo-card {
-  width: 8em;
-  /* border-radius: 2px; */
+  width: 10em;
   background: #fff;
   color: var(--clr-text);
   display: flex;
@@ -21,7 +20,7 @@
 }
 .photo-card p {
   color: #000;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 .photo-card > * + * {
   margin-top: 1em;

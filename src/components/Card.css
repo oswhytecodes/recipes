@@ -1,5 +1,5 @@
 .card-container {
-  width: 8em;
+  width: 10em;
   padding: 1em;
   margin: 1em;
   border-radius: 2px;
@@ -34,13 +34,13 @@ hr {
 
 .one {
   color: #000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .two {
   color: var(--clr-text);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-top: 1em;
 }
 .card-header {
@@ -57,7 +57,7 @@ hr {
 .card-text {
   color: #000;
   opacity: 0.6;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   margin-top: 2em;
 }
 .card-link {

@@ -2,11 +2,11 @@ import react from "react";
 import "./Card.css";
 import Fruit from "../assets/images/fruits.png";
 
-const Card = ({ id, headerOne, headerTwo, text, link }) => {
+const Card = ({ img, id, headerOne, headerTwo, text, link }) => {
   return (
     <div className="card-container">
       <div className="card-header ">
-        <img src={Fruit} alt="" />
+        <img src={img} alt="" />
         <p>{id}</p>
       </div>
       <p className="one">{headerOne}</p>

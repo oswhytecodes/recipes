@@ -10,28 +10,42 @@ import foodTwo from "../assets/images/food2.jpg";
 import foodThree from "../assets/images/food3.jpg";
 import foodFour from "../assets/images/food4.jpg";
 
+import cardImgFruit from "../assets/images/fruits.png";
+import cardImgSalad from "../assets/images/salad.png";
+import cardImgFitness from "../assets/images/fitness.png";
+import cardImgScale from "../assets/images/scale.png";
+
 const Section = () => {
   return (
     <div>
-      {/*  */}
-      <section className="section-container section-one">
+      
+      {/* services section 1 */}
+      <section id="Services" className="section-container section-one">
         <div className=" subhead subhead-center">
           <h4>OUR SERVICES</h4>
           <h3>The New Tradition Is Good Nutrition</h3>
         </div>
         <div className="cards-container">
-          <Card id="01" headerOne="Weight Loss" headerTwo="Diet Plan" />
           <Card
+            img={cardImgFruit}
+            id="01"
+            headerOne="Weight Loss"
+            headerTwo="Diet Plan"
+          />
+          <Card
+            img={cardImgSalad}
             id="02"
             headerOne="Food Salads"
             headerTwo="Personalized Nutritition"
           />
           <Card
+            img={cardImgScale}
             id="03"
             headerOne="Food Sensitivities"
             headerTwo="Excess Weight"
           />
           <Card
+            img={cardImgFitness}
             id="04"
             headerOne="Daily Exercise Plan"
             headerTwo="Exercise Program"
@@ -39,7 +53,10 @@ const Section = () => {
         </div>
       </section>
 
-      <section className="section-container section-two recipes">
+      {/*  */}
+      {/* recipes section 2 */}
+
+      <section id="Recipes" className="section-container section-two recipes">
         <div className="subhead subhead-left">
           <h4>Recipes</h4>
           <h3>The New Tradition Is Good Nutrition</h3>
@@ -68,7 +85,9 @@ const Section = () => {
       <div>
         <img className="food-bg" src={foodBg} alt="Vegetables on a table" />
       </div>
-      <section className="section-container section-one about-us">
+      {/*  */}
+      {/* about section 3 */}
+      <section id="About" className="section-container section-one about-us">
         <div className="subhead subhead-center">
           <h4>About Us</h4>
           <h3>Eat Healthy, Be Nutrition Wealthy</h3>
@@ -89,8 +108,12 @@ const Section = () => {
           Or, give us a <br /> <br /> <a href="#">Call: (000)012-9841</a>{" "}
         </p>
       </section>
-
-      <section className="section-container section-one recipe-book">
+      {/*  */}
+      {/* recipe book section 4 */}
+      <section
+        id="Recipe_Book"
+        className="section-container section-one recipe-book"
+      >
         <div className="subhead subhead-center">
           <h4>Recipe Book</h4>
           <h3>Our Healthy Popular Items</h3>
@@ -109,7 +132,7 @@ const Section = () => {
           />
           <Photocard
             recipeImg={foodThree}
-            text="The Nutrition Lookbook"
+            text="Nutrition Lookbook"
             price="Add to cart"
           />
           <Photocard

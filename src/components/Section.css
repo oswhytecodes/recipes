@@ -6,7 +6,7 @@ a {
   width: min(100%, 50em);
   padding-inline: 3em;
   margin-top: 2em;
-
+  /* margin-bottom: 4em; */
   margin-inline: auto;
   display: flex;
   justify-content: center;
@@ -27,10 +27,10 @@ a {
   color: var(--clr-text);
 }
 /* Media query section container */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   .section-container {
-    padding: 0.5em;
-    margin-top: 3em;
+    padding-top: 5em;
+    padding-bottom: 2em;
   }
 }
 /*  Container for Cards and Photocards */
@@ -43,6 +43,7 @@ a {
   flex-wrap: wrap;
   margin-inline: auto;
   max-width: 100%;
+  gap: 1em;
 }
 
 /* cards media query */
@@ -51,14 +52,13 @@ a {
   .photo-card-container {
     justify-content: space-evenly;
     max-width: 100%;
-    gap: 0.5em;
+    gap: 1em;
   }
 }
 
 /* === SECTION TWO RECIPES === */
 .section-one,
 .section-two {
-  padding-top: 2em;
   width: 100vw;
 }
 .tabsandimages {
@@ -103,9 +103,12 @@ a {
   padding: 1em 0.6em;
   font-size: 0.8rem;
   font-weight: 600;
+  flex-basis: 1;
 }
+
 .tabs-list li:hover {
   color: var(--clr-text);
+  /* background-color: darkgrey; */
 }
 .tabs-list > * + * {
   margin-left: 1em;
@@ -118,12 +121,8 @@ a {
 }
 /* recipes media query */
 @media screen and (max-width: 768px) {
-  .tabs-list {
-  }
-  .images > * {
-    /* margin-left: 1em; */
-  }
-  .images:nth-child(1) {
+  .images > * + * {
+    margin: 2em 0;
   }
   .subhead-left {
     text-align: left;
@@ -151,13 +150,10 @@ a {
   justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 40em;
-}
-.contact-form > * + * {
-  margin-left: 0.5em;
+  gap: 1em;
 }
 .text-input {
   border: none;
-  border-radius: 2px;
   padding: 8px 15px;
 }
 .btn {

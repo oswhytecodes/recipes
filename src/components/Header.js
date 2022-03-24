@@ -11,7 +11,9 @@ const Header = () => {
 
   return (
     <nav>
-      <h3 className="logo"> RECIPES </h3>
+      <a className="logo" href="">
+        <h3> RECIPES </h3>
+      </a>
       <ul className="nav-list">
         <li>
           <a href="#Home">Home</a>

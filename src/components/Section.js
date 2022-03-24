@@ -18,7 +18,6 @@ import cardImgScale from "../assets/images/scale.png";
 const Section = () => {
   return (
     <div>
-      
       {/* services section 1 */}
       <section id="Services" className="section-container section-one">
         <div className=" subhead subhead-center">
@@ -57,13 +56,15 @@ const Section = () => {
       {/* recipes section 2 */}
 
       <section id="Recipes" className="section-container section-two recipes">
-        <div className="subhead subhead-left">
+        <div className="subhead subhead-center">
           <h4>Recipes</h4>
           <h3>The New Tradition Is Good Nutrition</h3>
         </div>
-        <div className="images">
-          <img className="about-images" src={recipeOne} alt="Recipe book" />
-          <img className="about-images" src={recipeTwo} alt="Recipe book " />
+        <div class="tabsandimages">
+          <div className="images">
+            <img className="about-images" src={recipeOne} alt="Recipe book" />
+            <img className="about-images" src={recipeTwo} alt="Recipe book " />
+          </div>
           <div className="tabs-container">
             <ul className="tabs-list">
               <li>Our History</li>
@@ -82,6 +83,7 @@ const Section = () => {
           </div>
         </div>
       </section>
+
       <div>
         <img className="food-bg" src={foodBg} alt="Vegetables on a table" />
       </div>
@@ -94,10 +96,14 @@ const Section = () => {
         </div>
         <div>
           <form className="contact-form" action="">
-            <input className="text-input" value="Enter your name" type="text" />
             <input
               className="text-input"
-              value="Enter your email"
+              placeholder="Enter your name"
+              type="text"
+            />
+            <input
+              className="text-input"
+              placeholder="Enter your email"
               type="text"
             />
             <input className="btn" value="Subscribe" type="submit" />

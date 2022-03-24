@@ -4,7 +4,7 @@ import heroImg from "../assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="container">
+    <section id="Home" className="container">
       {/* Hero Img */}
       <div className="hero-section">
         {/* Hero Text */}

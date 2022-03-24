@@ -3,7 +3,7 @@ a {
   display: inline-block;
 }
 .section-container {
-  width: min(100%, 50em);
+  width: min(100%, 60em);
   padding-inline: 3em;
   margin-top: 2em;
   /* margin-bottom: 4em; */
@@ -31,6 +31,8 @@ a {
   .section-container {
     padding-top: 5em;
     padding-bottom: 2em;
+padding-inline: .5em;
+
   }
 }
 /*  Container for Cards and Photocards */
@@ -41,9 +43,10 @@ a {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+
   margin-inline: auto;
   max-width: 100%;
-  gap: 1em;
+  /* gap: 1em; */
 }
 
 /* cards media query */
@@ -51,7 +54,7 @@ a {
   .cards-container,
   .photo-card-container {
     justify-content: space-evenly;
-    max-width: 100%;
+    width: 100%;
     gap: 1em;
   }
 }
@@ -75,13 +78,13 @@ a {
   margin-inline: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
   flex-wrap: wrap;
 }
 
 .images > * + * {
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .about-images {
   width: 8em;
@@ -120,9 +123,11 @@ a {
   margin-inline: auto;
 }
 /* recipes media query */
+
 @media screen and (max-width: 768px) {
   .images > * + * {
-    margin: 2em 0;
+    /* margin: 1em 0;
+    gap:.5em; */
   }
   .subhead-left {
     text-align: left;
@@ -132,6 +137,11 @@ a {
     min-width: 19em;
   }
 }
+@media screen and (max-width: 425px) {
+.tabs-container {
+    margin-top: 2em;
+  }
+}
 
 /* === SECTION THREE ABOUT US -  CONTACT === */
 .food-bg {
@@ -139,7 +149,7 @@ a {
   background: fixed;
 }
 .about-us {
-  margin-top: -11em;
+  margin-top: -12em;
 }
 .contact-form {
   background-color: #567b5c;
@@ -169,7 +179,7 @@ a {
     margin-top: 1em;
   }
   .about-us {
-    margin-top: -8em;
+    margin-top: -12em;
   }
 }
 .form-quote {

@@ -1,9 +1,9 @@
 # My First React Project 
 
-View Here < https://recipes-gamma-nine.vercel.app/ >
+[View Here](https://recipes-gamma-nine.vercel.app/)
 
 
-Template Link <https://dribbble.com/shots/17715373-Recipes-Web-Design-Inspiration/attachments/12876795?mode=media>
+[Template Link](https://dribbble.com/shots/17715373-Recipes-Web-Design-Inspiration/attachments/12876795?mode=media)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

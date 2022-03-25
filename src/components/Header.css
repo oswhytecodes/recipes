@@ -64,7 +64,8 @@ nav {
     justify-content: flex-start;
     transition: 0.5s;
     font-weight: 800;
-    gap:2.2em
+    gap:2.2em;
+    padding-top: 3em;
   }
   .nav-list.active {
     top: 3.5em;

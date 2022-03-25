@@ -46,7 +46,7 @@ padding-inline: .5em;
 
   margin-inline: auto;
   max-width: 100%;
-  /* gap: 1em; */
+  gap: 1em;
 }
 
 /* cards media query */
